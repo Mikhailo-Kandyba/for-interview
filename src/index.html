@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Вопросы и ответы на собеседование</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header-content">
+                        <a class="logo" href="#">
+                            <img src="./images/logo.svg" alt="logo">
+                        </a>
+                        <div class="menu-navigation-wrap">
+                            <ul class="menu-navigation">
+                                <li>
+                                    <a href="#html">HTML</a>
+                                </li>
+                                <li>
+                                    <a href="#css">CSS</a>
+                                </li>
+                                <li>
+                                    <a href="#web">Основы WEB</a>
+                                </li>
+                                <li class="summary-item">
+                                    <a class="link" href="#">Summary</a>
+                                    <ul class="summary-list">
+                                        <li>
+                                            <a target="_blank" href="#">Резюме</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-menu">
+                            <span class="top"></span>
+                            <span class="middle"></span>
+                            <span class="bottom"></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <button class="btn-scroll"></button>
+                <section id="html" class="container block-area">
+                    <div class="title-block">
+                        <h1>Ответы на вопросы на собеседование Основы HTML</h1>
+                        <a href="https://jsehelper.blogspot.com/2016/01/html.html">https://jsehelper.blogspot.com/2016/01/html.html</a>
+                    </div>
+                    <dl>
+                        <dt class="question">Что такое HTML?</dt>
+                        <dd class="answer">
+                            <strong>HTML(HyperТext Markup Language, HTML)</strong> - это язык разметки. Вы используете HTML
+                            для разметки текстового документа.
+                        </dd>
+                        <dt class="question">Что такое DOCTYPE и зачем он нужен? </dt>
+                        <dd class="answer">
+                            <strong>DOCTYPE</strong> - это определение типа документа (Document Type Definition (DTD)),
+                            правила, в соответствии с которыми осуществляется проверка конкретного документа
+                            (веб-страницы) XML или (X)HTML.
+                        </dd>
+                        <dt class="question">Чем отличается div от span?</dt>
+                        <dd class="answer">
+                            <strong>div</strong> - это блочный контейнер, а <strong>span</strong> - линейный.
+                        </dd>
+                        <dt class="question">Как обозначаются комментарии в HTML?</dt>
+                        <dd class="answer">
+                            &lt;!-- вот так--&gt;
+                        </dd>
+                        <dt class="question">Что такое атрибут?</dt>
+                        <dd class="answer">
+                            Атрибуты задают элементам дополнительные свойства и расширяют возможности
+                        </dd>
+                        <dt class="question">У каких атрибутов отсутствует значение?</dt>
+                        <dd class="answer">
+                            Логический атрибут
+                        </dd>
+                        <dt class="question">Какой атрибут позволяет создавать свои атрибуты для хранения произвольной информации?</dt>
+                        <dd class="answer">
+                            data-*
+                        </dd>
+                        <dt class="question">Группировка данных формы</dt>
+                        <dd class="answer">
+                            <strong>пример:</strong>
+                            <fieldset>
+                                <legend>Личные данные</legend>
+                                <p>
+                                    <label for="user-name">Имя</label>
+                                    <input type="text" name="user-name" id="user-name">
+                                </p>
+                                <p>
+                                    <label for="phone-number">Телефон</label>
+                                    <input type="tel" name="user-phone-number" id="phone-number">
+                                </p>
+                            </fieldset>
+                        </dd>
+                        <dt class="question">Ссылки. Как задать адрес документа, на который следует перейти? </dt>
+                        <dd class="answer">
+                            &lt;a href="https://jsehelper.blogspot.com/example/example.html"><br class="mobile">Абсолютная ссылка&lt;/a><br>
+                            &lt;a href="../../example/example.html"><br class="mobile">Относительная ссылка&gt;/a>
+                        </dd>
+                        <dt class="question">Как сделать сcылку на имейл?</dt>
+                        <dd class="answer">
+                            &lt;a href="mailto:testmail@mail.com">E-mail me&lt;/a>
+                        </dd>
+                        <dt class="question">Что делают теги &lt;em&gt;&lt;/em&gt; ?</dt>
+                        <dd class="answer">
+                            Выводят заключенный в них текст курсивом.
+                        </dd>
+                        <dt class="question">Что пишут в теге HEAD?</dt>
+                        <dd class="answer">
+                            <ol>
+                                <li>
+                                    Тег <strong>title</strong> Это очень важный тег, особенно с точки зрения SEO. Как он прописывается? С помощью тегов &lt;title&gt;&lt;/title&gt;.
+                                    То есть получается примерно так: &lt;title&gt;Название вашего веб-документа&lt;/title&gt;;
+                                </li>
+                                <li>
+                                    <strong>Мета-теги</strong>. Мета теги, в основном, нужны для трёх вещей: прописать кодировку, description (описание) и keywords (ключевые слова).
+                                </li>
+                                <li>
+                                    Также внутри тегов head прописывается путь к таблице стилей, так связывается веб-страница
+                                    и таблица стилей, или CSS пишется прямо на странице, внутри тегов style
+                                </li>
+                                <li>
+                                    Внутри тега head подключаются всевозможные скрипты. Как они подключаются? Прописываются теги script
+                                    с указанием типа языка и внутри них или пишется код скрипта, или к тегу script
+                                    прописывается атрибут src, в котором указывается путь к скрипту.
+                                </li>
+                            </ol>
+                        </dd>
+                        <dt class="question">Зачем нужны теги &lt;dl&gt;,&lt;dt&gt;,&lt;dd&gt;? </dt>
+                        <dd class="answer">
+                            Теги &lt;dl&gt;,&lt;dt&gt;,&lt;dd&gt; предназначенны для создания списка определений.<br>
+                            <strong>пример:</strong><br>
+                            &lt;dl&gt;контейнер писка&lt;/dl&gt;<br>
+                            &lt;dt&gt;заголовок опредиления&lt;dt&gt;<br>
+                            &lt;dt&gt;опредиление&lt;dt&gt;
+                        </dd>
+                        <dt class="question">В каком регистре лучше писать HTML-код? </dt>
+                        <dd class="answer">
+                            пишем в нижнем регистре.&nbsp;
+                        </dd>
+                        <dt class="question">Обязательно ли писать alt в &lt;img&gt;? </dt>
+                        <dd class="answer">
+                            Да.
+                        </dd>
+                    </dl>
+                </section>
+                <section id="css" class="container block-area">
+                    <div class="title-block">
+                        <h1>Ответы на вопросы на собеседование Основы CSS.</h1>
+                        <a href="https://jsehelper.blogspot.com/2016/01/css.html">https://jsehelper.blogspot.com/2016/01/css.html</a>
+                    </div>
+                    <dl>
+                        <dt class="question">Что такое CSS? </dt>
+                        <dd class="answer">
+                            <strong>Cascading Style Sheets(CSS)</strong> - каскадные таблицы стилей
+                        </dd>
+                        <dt class="question">ЧТо такое переменные в браузере?</dt>
+                        <dd class="answer">
+                            <strong>Переменные</strong> — это контейнер для хранения информации<br>
+                            <strong>пример;</strong><br>
+                            let message;<br>
+                            message = 'Hello!';<br>
+                            alert(message); // показывает содержимое переменной
+                        </dd>
+                        <dt class="question">Фиксируванная верстка</dt>
+                        <dd class="answer">
+                            это масштабируемая верстка
+                        </dd>
+                        <dt class="question">Дочерний селектор (element>element)</dt>
+                        <dd class="answer">
+                            <strong>Дочерний селектор</strong> позволяет использовать стили только когда дочерние элементы следуют сразу за родительским,<br>
+                            <div class="img-area">
+                                <img src="./images/selector-1.png" alt="selector">
+                            </div>
+                        </dd>
+                        <dt class="question">Соседний (сестринский) селектор (element+element)</dt>
+                        <dd class="answer">
+                            <strong>Селекторы соседних элементов</strong> позволяют выбрать элементы из группы элементов одного уровня.<br>
+                            <div class="img-area">
+                                <img src="./images/selector-2.png" alt="selector">
+                            </div>
+                            <strong>Общий селектор сестринских элементов</strong> нужен для выбора всех элементов, которые находятся на этом же уровне вложенности<br>
+                            <div class="img-area">
+                                <img src="./images/selector-3.png" alt="selector">
+                            </div>
+                        </dd>
+                        <dt class="question">Гиперссылки</dt>
+                        <dd class="answer">
+                            <h3>Атрибут target определяет, где показать содержимое после перехода по ссылке. Атрибут target принимает такие значения:</h3>
+                            <ul>
+                                <li>_self загружает документ в текущей вкладке. Является значением по умолчанию.</li>
+                                <li>_blank загружает документ в новой вкладке.</li>
+                                <li>_parent загружает документ в родительской вкладке.</li>
+                                <li>_top в HTML5 загружает в окне высшего уровня. Если родителя нет, ведёт себя как _self.</li>
+                            </ul>
+                        </dd>
+                        <dt class="question">отзывчивая(резиновая) верстка</dt>
+                        <dd class="answer">
+                            ширина задается в процентах, верстка подстраиваеться под размер экрана
+                        </dd>
+                        <dt class="question">адаптивная верстка</dt>
+                        <dd class="answer">
+                            используються брейкпоинты которые срабатывают на заданих размерах<br>
+                            <strong>пример:</strong><br>
+                            @media (max-width: 1024px)<br>
+                            @media (max-width: 768px)<br>
+                            @media (max-width: 767px)
+                        </dd>
+                        <dt class="question">В чем разница между записью #my и .my?</dt>
+                        <dd class="answer">
+                            <strong>#my - селектор ай-ди.</strong><br>
+                            <strong>пример;</strong><br>
+                            id="wrapper"<br>
+                            <strong>.my - селектор класса.</strong><br>
+                            <strong>пример;</strong><br>
+                            class="question"<br>
+                        </dd>
+                        <dt class="question">В чем разница между margin и padding?</dt>
+                        <dd class="answer">
+                            <strong>margin</strong> - внешний отступ (снаружи от границ блока до остальных элементов страницы);
+                            <strong>padding</strong> - внутренний отступ (внутри от границ блока до контента).
+                        </dd>
+                        <dt class="question">Почему таблицы стилей CSS называются каскадными?</dt>
+                        <dd class="answer">
+                            иерархия стилей
+                        </dd>
+                        <dt class="question">Что такое альтернативная таблица стилей?</dt>
+                        <dd class="answer">
+                            <strong>Альтернативная таблица стилей</strong> - это таблица, определяющая стили, которые будут использованы взамен стилей,
+                            использующихся по умолчанию. Например, пользователь может сделать выбор, в зависимости от своих предпочтений,
+                            если мы заранее подготовим одну таблицу стилей для маленького экрана, а другую – для слабовидящих (с крупными шрифтами).
+                            Альтернативные стили позволяют пользователю сделать выбор наиболее подходящего из них.
+                        </dd>
+                        <dt class="question">Какая разница между значениями 0 и auto в свойстве margin?</dt>
+                        <dd class="answer">
+                            В вертикальных полях, auto всегда означает 0. В горизонтальных полях, auto означает 0 только тогда, если свойство width также auto.
+                        </dd>
+                        <dt class="question">Для чего применяются свойства border-position и border-all?</dt>
+                        <dd class="answer">
+                            Таких свойств в CSS нет.
+                        </dd>
+                        <dt class="question">Как в CSS обозначаются комментарии?</dt>
+                        <dd class="answer">
+                            /* вот так */
+                        </dd>
+                        <dt class="question">Что делает свойство clear?</dt>
+                        <dd class="answer">
+                            Устанавливает, с какой стороны элемента запрещено его обтекание другими элементами.
+                            Если задано обтекание элемента с помощью свойства float, то clear отменяет его действие для указанных сторони.
+                        </dd>
+                        <dt class="question">Что такое DOM?</dt>
+                        <dd class="answer">
+                            <strong>DOM (Document Object Model, объектная модель документа)</strong> — это дерево элемента.
+                            Этот интерфейс позволяет воздействовать на документ из скриптов, меняя его оформление, стили, содержимое. В DOM документ представлен в виде дерева узлов.
+                        </dd>
+                        <dt class="question">Какие бывают значения display? Расскажите как ведёт себя каждое свойство.</dt>
+                        <dd class="answer">
+                            <ul>
+                                <li>
+                                    <h3>block</h3>
+                                    <p>
+                                        Элемент показывается как блочный.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>inline</h3>
+                                    <p>
+                                        Элемент отображается как строчный.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>inline-block</h3>
+                                    <p>
+                                        Это значение генерирует блочный элемент
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>inline-table</h3>
+                                    <p>
+                                        Определяет, что элемент является таблицей, как при использовании &lt;table&gt;, но при этом таблица
+                                        является строчным элементом и происходит её обтекание другими элементами, например, текстом.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>inline-flex</h3>
+                                    <p>
+                                        Элемент ведёт себя как строчный и выкладывает содержимое согласно флекс-модели.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>flex</h3>
+                                    <p>
+                                        Элемент ведёт себя как блочный и выкладывает содержимое согласно флекс-модели.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>list-item</h3>
+                                    <p>
+                                        Элемент выводится как блочный и добавляется маркер списка.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>table</h3>
+                                    <p>
+                                        Определяет, что элемент является блочной таблицей, подобно использованию &lt;table&gt;.
+                                    </p>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dt class="question">Что вы знаете о весе селекторов? Каковы значения веса?</dt>
+                        <dd class="answer">
+                            <strong>Вес селекторов (по убыванию):</strong><br>
+                            style=""<br>
+                            #id<br>
+                            .class<br>
+                            [attr=value]<br>
+                            LI<br>
+                            *
+                        </dd>
+                        <dt class="question">Какие бывают значения у свойства position? Расскажите как ведёт себя каждое свойство.</dt>
+                        <dd class="answer">
+                            <ul>
+                                <li>
+                                    <h3>absolute</h3>
+                                    <p>
+                                        Абсолютное позиционирование. Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются
+                                        на веб-странице словно абсолютно позиционированного элемента и нет.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>fixed</h3>
+                                    <p>
+                                        Фиксированное позиционирование. По своему действию это значение близко к absolute, но в отличие от него привязывается
+                                        к указанной свойствами left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>relative</h3>
+                                    <p>
+                                        Относительное позиционирование. Положение элемента устанавливается относительно его исходного места. Добавление свойств left,
+                                        top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>static</h3>
+                                    <p>
+                                        Статичное позиционирование.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>sticky</h3>
+                                    <p>
+                                        Это сочетание относительного и фиксированного позиционирования. Элемент рассматривается как позиционированный относительно,
+                                        пока он не пересекает определённый порог, после чего рассматривается как фиксированный.
+                                    </p>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dt class="question">Что такое float?</dt>
+                        <dd class="answer">
+                            Определяет, по какой стороне будет выравниваться элемент, при этом остальные элементы будут обтекать
+                            его с других сторон.
+                        </dd>
+                        <dt class="question">Что такое clearfix? Из чего он состоит и для чего он?</dt>
+                        <dd class="answer">
+                            Это способ борьбы с проблемой контейнера нулевой высоты для плавающих элементов<br>
+                            <strong>пример:</strong><br>
+                            .clearfix:after {<br>
+                            content: "";<br>
+                            clear: both;<br>
+                            display: block;
+                        </dd>
+                        <dt class="question">Из чего строится размер элемента?</dt>
+                        <dd class="answer">
+                            <strong>box-sizing: content-box</strong>Основывается на стандартах CSS, при этом свойства width и height задают ширину и высоту содержимого и не включают в себя значения margin, padding и border.
+                            <strong>box-sizing: border-box</strong>
+                            Свойства width и height включают в себя значения padding и border, но не margin.
+                        </dd>
+                        <dt class="question"> Псевдоклассы</dt>
+                        <dd class="answer">
+                            <ul>
+                                <li>
+                                    <h3>:active</h3>
+                                    <p>
+                                        используется преимущественно для ссылок.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>:link</h3>
+                                    <p>
+                                        Применяется к непосещенным ссылкам
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3> :focus</h3>
+                                    <p>
+                                        курсор установлен в поле, и с помощью клавиатуры можно вводить в него текст
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>:visited</h3>
+                                    <p>
+                                        применяется к посещённым ссылкам.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3> :hover</h3>
+                                    <p>
+                                        работает при наведении
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3> :not</h3>
+                                    <p>
+                                        задаёт правила стилей для элементов, которые не содержат указанный селектор.<br>
+                                        input:not([type="submit"]) {<br>
+                                        border: 1px solid #ccc;<br>
+                                        padding: 3px; }
+                                    </p>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dt class="question"> Псевэлемент</dt>
+                        <dd class="answer">
+                            <h3>для оформления</h3>
+                            <ul>
+                                <li>
+                                    <h3>::after</h3>
+                                    <p>
+                                        добавляет контент после элеммента
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>::before</h3>
+                                    <p>
+                                        добавляет контент до элеммента
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>::first-letter</h3>
+                                    <p>
+                                        оформление первого символа
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>::first-line</h3>
+                                    <p>
+                                        оформление первой строки текста
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>::selection</h3>
+                                    <p>
+                                        ::selection — позволяет установить цвет и фон для текста, который выделен пользователем.
+                                    </p>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dt class="question">Что такое семантика</dt>
+                        <dd class="answer">
+                            <strong>Семантическая вёрстка</strong> — смысловое предназначение каждого блока и логическую структуру документа
+                        </dd>
+                        <dt class="question">Что такое блочная модель CSS?</dt>
+                        <dd class="answer">
+                            Модуль CSS Box Model описывает свойства padding и margin, которые создают поля внутри и отступы снаружи CSS блока. Размеры блока также могут быть увеличены за счет рамки.
+                            Каждый блок имеет прямоугольную область содержимого в центре, поля вокруг содержимого, рамку вокруг полей и отступ за пределами рамки.
+                        </dd>
+                        <dt class="question">Как ведут себя margin у двух элементов по соседству?</dt>
+                        <dd class="answer">
+                            наблюдается эффект схлопывания,
+                            когда отступы не суммируются, а объединяются между собой при этом примыкающие отступы комбинируются в один.
+                            Для отступов слева и справа схлопывание никогда не применяется.
+                            <h3>Схлопывание не срабатывает:</h3>
+                            <ul>
+                                <li>
+                                    для элементов, у которых на стороне схлопывания задано свойство padding.
+                                </li>
+                                <li>
+                                    для элементов, у которых на стороне схлопывания задана граница; на элементах с абсолютным позиционированием, т. е. таких, у которых position установлено как absolute;
+                                </li>
+                                <li>
+                                    на плавающих элементах (для них свойство float задано как left или right);
+                                </li>
+                                <li>
+                                    для строчных элементов;
+                                </li>
+                                <li>
+                                    для &lt;html&gt;.
+                                </li>
+                            </ul>
+                        </dd>
+                        <dt class="question">Есть ли у тегов предопределённые стили?</dt>
+                        <dd class="answer">
+                            Есть, у input.
+                        </dd>
+                        <dt class="question">Как повлиять на вертикальное выравнивание строчного элемента?</dt>
+                        <dd class="answer">
+                            <strong>vertical-align</strong><br>
+                            <strong>vertical-align:</strong> baseline|bottom|middle|sub|super|text-bottom|text-top|top|
+                        </dd>
+                        <dt class="question">Как браузер «читает» css?</dt>
+                        <dd class="answer">
+                            Делает он это сверху вниз, проходясь последовательно по каждой строчке.
+                        </dd>
+                        <dt class="question">Что такое наследование стилей?</dt>
+                        <dd class="answer">
+                            значения свойств элемента-родителя передаются его элементам-потомкам.
+                        </dd>
+                        <dt class="question">Как отцентровать элемент по горизонтали не зная ширину родительского блока?</dt>
+                        <dd class="answer">
+                            margin: 0 auto?, text-align: center, flex, justify-content: center
+                        </dd>
+                        <dt class="question">Как отцентровать элемент по вертикали не зная высоту родительского блока? Перечислите все известные вам методы.</dt>
+                        <dd class="answer">
+                            <div class="img-area">
+                                <h3>позиционирование:</h3>
+                                <img src="images/img-1.png" alt="image">
+                            </div>
+                            <div class="img-area">
+                                <h3>tranform:</h3>
+                                <img src="images/img-1.png" alt="image">
+                            </div>
+                            <div class="img-area">
+                                <h3>flexbox:</h3>
+                                <img src="images/img-2.png" alt="image">
+                            </div>
+                        </dd>
+                        <dt class="question">Какие бывают значения у свойства background-size? Расскажите о каждом из них.</dt>
+                        <dd class="answer">
+                            <ul>
+                                <li>
+                                    <h3>auto</h3>
+                                    <p>
+                                        Если задано одновременно для ширины и высоты (auto auto), размеры фона остаются исходными;
+                                        если только для одной стороны картинки (100px auto), то размер вычисляется автоматически исходя из пропорций картинки
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>cover</h3>
+                                    <p>
+                                        Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>contain</h3>
+                                    <p>
+                                        Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока.
+                                    </p>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dt class="question">Что такое БЭМ?</dt>
+                        <dd class="answer">
+                            <strong>БЭМ (Блок, Элемент, Модификатор)</strong> — принцип разделения интерфейса на независимые блоки.
+                            Он позволяет легко и быстро разрабатывать интерфейсы любой сложности и повторно использовать существующий код
+                        </dd>
+                        <dt class="question">Какие из инструментов сборки вам знакомы?</dt>
+                        <dd class="answer">
+                            Gulp, GitLab
+                        </dd>
+                        <dt class="question">Какие из препроцессоров вы знаете?</dt>
+                        <dd class="answer">
+                            sass(scss), less
+                        </dd>
+                        <dt class="question">Что такое размер viewport?</dt>
+                        <dd class="answer">
+                            Мобильные браузеры отображают страницы в виртуальном «окне» (viewport, вьюпорт)
+                        </dd>
+                        <dt class="question">Разницу между псевдоклассом и псевдоэлементом?</dt>
+                        <dd class="answer">
+                            Ключевое отличие между ними в том, что псевдоклассы определяют именно состояние элементов,
+                            которые уже существуют на странице, а псевдоэлементы создают области (искусственные элементы), которых изначально на веб-странице не было.
+                        </dd>
+                        <dt class="question">Как выбрать другие селекторы?</dt>
+                        <dd class="answer">
+                            <strong>Дочерний селектор </strong>(element>element)<br>
+                            <strong>Соседний (сестринский) селектор</strong> (element+element)<br>
+                            <strong>Селектор атрибута</strong><br>
+                            [class] {<br>
+                            color: blueviolet; }
+                        </dd>
+                        <dt class="question">Что такое ретинизация?</dt>
+                        <dd class="answer">
+                            Корректное отображение элементов на ретина экранах.
+                        </dd>
+                        <dt class="question">Что такое SVG?</dt>
+                        <dd class="answer">
+                            <strong>Scalable Vector Graphics</strong> — масштабируемая векторная графика.
+                        </dd>
+                        <dt class="question">Какие вы знаете способы подключения шрифтов к странице?</dt>
+                        <dd class="answer">
+                            Ссылкой, инлайново в стилях.
+                        </dd>
+                        <dt class="question">Что такое JQuery?</dt>
+                        <dd class="answer">
+                            <strong>jQuery</strong> — библиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML.
+                        </dd>
+                        <dt class="question">Что такое npm?</dt>
+                        <dd class="answer">
+                            Пакетный менеджер node.js
+                        </dd>
+                        <dt class="question">Зачем нам обычно файл package.json?</dt>
+                        <dd class="answer">
+                            Установленные плагины.
+                        </dd>
+                        <dt class="question">Что такое git?</dt>
+                        <dd class="answer">
+                            Управление версиями.
+                        </dd>
+                        <dt class="question">Как посмотреть все ветки в вашем проекте?</dt>
+                        <dd class="answer">
+                            <strong>git branch</strong> - с которыми работаем <strong>git branch -a</strong> - все существующие ветви
+                        </dd>
+                        <dt class="question">Как посмотреть текущее состояние ветки?</dt>
+                        <dd class="answer">
+                            git status
+                        </dd>
+                        <dt class="question">Что такое commit?</dt>
+                        <dd class="answer">
+                            Запись изменений в репозиторий.
+                        </dd>
+                        <dt class="question">Какие подходы в верстке вам известны (float, flex, grid, etc.)?</dt>
+                        <dd class="answer">
+                            <a href="https://tpverstak.ru/float-flex-grid-css/">https://tpverstak.ru/float-flex-grid-css/</a>
+                        </dd>
+                        <dt class="question">Как упростить написание кросс-браузерных стилей?</dt>
+                        <dd class="answer">
+                            <a href="https://www.internet-technologies.ru/articles/aktualnye-sovety-po-kross-brauzernoy-verstke.html">https://www.internet-technologies.ru/articles/aktualnye-sovety-po-kross-brauzernoy-verstke.html</a>
+                        </dd>
+                        <dt class="question">Что такое CSS-препроцессоры?</dt>
+                        <dd class="answer">
+                            <strong>CSS препроцессор (CSS preprocessor)</strong> - это программа, которая имеет свой собственный синтаксис
+                            но может сгенерировать из него CSS код .
+                        </dd>
+                        <dt class="question">Объясните разницу между единицами измерения px, em, rem.</dt>
+                        <dd class="answer">
+                            <a href="https://learn.javascript.ru/css-units">https://learn.javascript.ru/css-units</a>
+                        </dd>
+                        <dt class="question"> Как работает CSS Grid?</dt>
+                        <dd class="answer">
+                            <a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout</a>
+                            Grid представляет собой пересекающийся набор горизонтальных и вертикальных линий - один набор определяет столбцы, а другой строки.
+                        </dd>
+                        <dt class="question">Чем отличается элемент от тега?</dt>
+                        <dd class="answer">
+                            <strong>Элемент</strong> — это набор из тегов и содержания.
+                        </dd>
+                        <dt class="question">CSS Flexbox</dt>
+                        <dd class="answer">
+                            <strong>CSS Flexbox</strong> — это технология для создания сложных гибких макетов за счёт правильного размещения элементов на странице
+                        </dd>
+                        <dt class="question">flex-grow</dt>
+                        <dd class="answer">
+                            управляет свободным пространством у родительського блока
+                        </dd>
+                        <dt class="question">flex-basis</dt>
+                        <dd class="answer">
+                            CSS свойство flex-basis задаёт базовый размер флекс элемента по основной оси. Это свойство определяет размер контент-бокса, если не задано иначе через box-sizing.<br>
+                            <strong>Внимание:</strong> в случае, если для элемента одновременно заданы flex-basis (отличное от auto) и width ( или height в случае flex-direction: column), flex-basis имеет приоритет.
+                        </dd>
+                        <dt class="question">flex-grow</dt>
+                        <dd class="answer">
+                            управляет свободным пространством у родительського блока
+                        </dd>
+                    </dl>
+                </section>
+                <section id="web" class="container block-area">
+                    <div class="title-block">
+                        <h1>Ответы на вопросы на собеседование Основы WEB.</h1>
+                        <a href="https://jsehelper.blogspot.com/2016/01/web.html">https://jsehelper.blogspot.com/2016/01/web.html</a>
+                    </div>
+                    <dl>
+                        <dt class="question">Что такое www?</dt>
+                        <dd class="answer">
+                            Всемирная паутина (сокращенно World Wide Web или WWW) - это единство информационных ресурсов,
+                            которые связаны между собой средствами телекоммуникаций по всему миру.
+                        </dd>
+                        <dt class="question">Что такое w3c?</dt>
+                        <dd class="answer">
+                            W3C - абревиатура, которая обозначает Консорциум мировой сети (World Wide Web Consortium), организацию, цель которой - разработка и внедрение единых стандартов работы Интернета.
+                        </dd>
+                        <dt class="question">Что такое URI?</dt>
+                        <dd class="answer">
+                            URI, Uniform Resource Identifier (унифицированный идентификатор ресурса) - последовательность символов,
+                            идентифицирующая физический или абстрактный ресурс, который не обязательно должен быть доступен через сеть Интернет,
+                            причем, тип ресурса, к которому будет получен доступ, определяется контекстом и/или механизмом. Как правило делится на URL и URN,
+                            поэтому URL и URN это составляющие URI.
+                        </dd>
+                        <dt class="question">Что такое URL?</dt>
+                        <dd class="answer">
+                            URL, Uniform Resource Locator (единообразный локатор (определитель местонахождения) ресурса).
+                        </dd>
+                        <dt class="question">Что такое URN?</dt>
+                        <dd class="answer">
+                            URN, Unifrorm Resource Name (унифицированное имя ресурса) - является уникальным именем объекта.
+                        </dd>
+                        <dt class="question">Что такое интернет протокол IP?</dt>
+                        <dd class="answer">
+                            Интернет протокол (Internet Protocol, IP) - протокол сетевого уровня сетевой модели OSI
+                        </dd>
+                        <dt class="question">Что такое FTP?</dt>
+                        <dd class="answer">
+                            FTP (File Transfer Protocol - протокол передачи файлов) - стандартный протокол, предназначенный для передачи файлов
+                        </dd>
+                        <dt class="question">Чем отличаются HTTP и HTTPS?</dt>
+                        <dd class="answer">
+                            HTTP (HyperText Transfer Protocol - "протокол передачи гипертекста") - протокол прикладного
+                            уровня передачи данных (изначально - в виде гипертекстовых документов в формате HTML).
+                        </dd>
+                        <dt class="question">Что такое протокол передачи данных, какие вы знаете?</dt>
+                        <dd class="answer">
+                            <ul>
+
+                                <li>
+                                    <strong>HTTP (Hyper Text Transfer Protocol)</strong>- это протокол передачи гипертекста.
+                                </li>
+                                <li>
+                                    <strong>FTP (File Transfer Protocol)</strong>- это протокол передачи файлов со специального файлового сервера на компьютер пользователя.
+                                </li>
+                                <li>
+                                    <strong>POP (Post Office Protocol)</strong>- это стандартный протокол почтового соединения.
+                                </li>
+                                <li>
+                                    <strong>SMTP (Simple Mail Transfer Protocol)</strong>- протокол, который задает набор правил для передачи почты.
+                                </li>
+                            </ul>
+                        </dd>
+                        <dt class="question">Что такое web server?</dt>
+                        <dd class="answer">
+                            Веб-приложение - клиент-серверное приложение, в котором клиентом выступает браузер,
+                            а сервером - веб-сервер.
+                        </dd>
+                        <dt class="question">Дайте определение понятиям "авторизация" и "аутентификация", в чем их различия?</dt>
+                        <dd class="answer">
+                            <strong>Аутентификация</strong>- это проверка соответствия субъекта и того, за кого он пытается себя выдать, в простейшем случае - с помощью имени входа и пароля.
+                        </dd>
+                    </dl>
+                </section>
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

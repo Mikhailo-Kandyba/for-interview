@@ -1,0 +1,35 @@
+@import "variables";
+@import "mixin";
+
+.btn-scroll {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background: $linear-gradient;
+  padding: 20px;
+  border: none;
+  border-radius: 50%;
+
+  @include breakpoint($mobile) {
+    right: 10px;
+    bottom: 10px;
+    padding: 15px;
+  }
+
+  &:after {
+    content: "\f077";
+    font-family: "FontAwesome";
+    font-size: 40px;
+    color: $white;
+
+    @include breakpoint($mobile) {
+      font-size: 25px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $light-turquoise;
+    transition: all .25s ease;
+  }
+}
